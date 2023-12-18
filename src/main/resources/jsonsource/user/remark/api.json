@@ -1,0 +1,114 @@
+{
+  "set": {
+    "docs": "https://doc.rongcloud.cn/imserver/server/v1/im-server-api-list-v1",
+    "url": "user/remarks/set",
+    "params": {
+        "set": {
+          "userId": "aFo990k",
+          "remarks": "{\"user1\":\"remarks\"}"
+        }
+    },
+    "response": {
+      "success": {
+        "code": 200,
+        "status": 1
+      },
+      "fail": {
+        "20003": {
+          "code": "1002",
+          "errorMessage": "{{name}} 长度超限, {{name}} >= {{min}} 且 {{name}} <= {{max}} 单位: 字节"
+        },
+        "20005": {
+          "code": "1002",
+          "errorMessage": "id 为必传项"
+        },
+        "20001": {
+          "code": "1002",
+          "errorMessage": "参数类型不正确，请检查参数类型,应该为 Object 传入为 {{currentType}} "
+        },
+        "1004": {
+          "code": "1004",
+          "errorMessage": "签名错误, 请排查 Appkey、Secret 是否正确"
+        },
+        "1008": {
+          "code": "1008",
+          "errorMessage": "调用频率超限。"
+        }
+      }
+    }
+  },
+  "del": {
+    "docs": "https://doc.rongcloud.cn/imserver/server/v1/im-server-api-list-v1",
+    "url": "user/remarks/set",
+    "params": {
+        "del": {
+          "userId": "aFo990k",
+          "targetId": "userId"
+        }
+    },
+    "response": {
+      "success": {
+        "code": 200,
+        "status": 1
+      },
+      "fail": {
+        "20003": {
+          "code": "1002",
+          "errorMessage": "{{name}} 长度超限, {{name}} >= {{min}} 且 {{name}} <= {{max}} 单位: 字节"
+        },
+        "20005": {
+          "code": "1002",
+          "errorMessage": "id 为必传项"
+        },
+        "20001": {
+          "code": "1002",
+          "errorMessage": "参数类型不正确，请检查参数类型,应该为 Object 传入为 {{currentType}} "
+        },
+        "1004": {
+          "code": "1004",
+          "errorMessage": "签名错误, 请排查 Appkey、Secret 是否正确"
+        },
+        "1008": {
+          "code": "1008",
+          "errorMessage": "调用频率超限。"
+        }
+      }
+    }
+  },
+  "get": {
+    "docs": "https://doc.rongcloud.cn/imserver/server/v1/im-server-api-list-v1",
+    "url": "/user/remarks/get",
+    "params": {
+      "get": {
+        "userId": "aFo990k"
+      }
+    },
+    "response": {
+      "success": {
+        "code": 200
+      },
+      "fail": {
+        "20003": {
+          "code": "1002",
+          "errorMessage": "{{name}} 长度超限, {{name}} >= {{min}} 且 {{name}} <= {{max}} 单位: 字节"
+        },
+        "20005": {
+          "code": "1002",
+          "errorMessage": "id 为必传项"
+        },
+        "20001": {
+          "code": "1002",
+          "errorMessage": "参数类型不正确，请检查参数类型,应该为 Object 传入为 {{currentType}} "
+        },
+        "1004": {
+          "code": "1004",
+          "errorMessage": "签名错误, 请排查 Appkey、Secret 是否正确"
+        },
+        "1008": {
+          "code": "1008",
+          "errorMessage": "调用频率超限。"
+        }
+      }
+    }
+  }
+}
